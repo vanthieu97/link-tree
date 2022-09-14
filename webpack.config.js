@@ -17,13 +17,13 @@ module.exports = {
   output: {
     filename: "script.js",
     path: path.resolve(__dirname, "build"),
-    publicPath: "/",
+    publicPath: "./",
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
     ],
   },

@@ -94,6 +94,10 @@ a {
   border-radius: 50%;
   overflow: hidden;
   font-size: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
 }
 .avatar img {
   animation: anim-avt-1 10s infinite;
