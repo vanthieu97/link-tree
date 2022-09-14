@@ -102,7 +102,7 @@ a {
   -moz-transform: translate3d(0, 0, 0);
 }
 .avatar img {
-  animation: anim-avt-1 10s 3s infinite 3s;
+  animation: anim-avt-1 10s 3s infinite;
 }
 .avatar img:last-child {
   animation: anim-avt-2 10s 3s infinite;
