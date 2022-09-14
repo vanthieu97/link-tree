@@ -52,6 +52,7 @@ html {
 body {
   margin: 0;
   height: 100vh;
+  max-height: -webkit-fill-available;
   overflow: hidden;
   background: linear-gradient(
     0deg,
@@ -74,6 +75,7 @@ a {
 .container {
   height: 100%;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .section-wrap {
   max-width: 576px;
@@ -100,10 +102,11 @@ a {
   -moz-transform: translate3d(0, 0, 0);
 }
 .avatar img {
-  animation: anim-avt-1 10s infinite;
+  animation: anim-avt-1 10s 3s infinite 3s;
 }
 .avatar img:last-child {
-  animation: anim-avt-2 10s infinite;
+  animation: anim-avt-2 10s 3s infinite;
+  margin-top: -1px;
 }
 .id {
   margin-top: 12px;
