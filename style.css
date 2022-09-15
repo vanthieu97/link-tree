@@ -101,12 +101,11 @@ a {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
 }
-.avatar img {
+.avatar img:first-child {
   animation: anim-avt-1 10s 3s infinite;
 }
 .avatar img:last-child {
   animation: anim-avt-2 10s 3s infinite;
-  margin-top: -1px;
 }
 .id {
   margin-top: 12px;
