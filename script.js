@@ -1,5 +1,6 @@
 import "./style.css";
 window.onload = async function () {
+  console.log("jenkins: 001");
   const container = document.querySelector(".container");
   const navProducts = document.getElementById("navProducts");
   const navContacts = document.getElementById("navContacts");
