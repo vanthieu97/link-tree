@@ -1,6 +1,5 @@
 import "./style.css";
 window.onload = async function () {
-  console.log("jenkins: 001");
   const container = document.querySelector(".container");
   const navProducts = document.getElementById("navProducts");
   const navContacts = document.getElementById("navContacts");
@@ -36,4 +35,8 @@ window.onload = async function () {
     document.querySelector(".loading").style.display = "none";
     productsElement.querySelector(".items").style.display = "block";
   } catch (err) {}
+  let count = 0;
+  setInterval(() => {
+    document.getElementById("test").innerHTML = count++;
+  }, 1000);
 };

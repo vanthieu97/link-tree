@@ -18,7 +18,7 @@ module.exports = {
   output: {
     filename: "script.js",
     path: path.resolve(__dirname, "build"),
-    publicPath: "./",
+    // publicPath: "./",
   },
   module: {
     rules: [
@@ -34,6 +34,9 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin({
       patterns: [{ from: "images", to: "images" }],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: "worker.js", to: "worker.js" }],
     }),
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
